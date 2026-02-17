@@ -1,4 +1,3 @@
-
 .card {
   border-radius: 8px;
   padding: 25px;
@@ -24,7 +23,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
- 
+
 }
 
 label {
@@ -100,6 +99,7 @@ textarea {
   color: #F7941D;
   border-radius: 4px;
 }
+
 .activity-tabs {
   display: flex;
   align-items: center;
@@ -118,7 +118,7 @@ textarea {
 }
 
 .activity-tabs .active-tab {
-   background-color: #efe1c2;
+  background-color: #efe1c2;
   color: #333;
   border-bottom: 3px solid #f97316;
 
@@ -146,7 +146,7 @@ textarea {
   color: #9ca3af;
   border: 1px solid #d9dde3;
   border-radius: 6px;
-   background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .select-icon-box {
@@ -201,16 +201,17 @@ textarea {
   align-items: center;
   justify-content: center;
 
-  border-left: 1px solid #d9dde3;   
-  border-top: 1px solid #d9dde3;    
+  border-left: 1px solid #d9dde3;
+  border-top: 1px solid #d9dde3;
   border-bottom: 1px solid #d9dde3;
   border-right: 1px solid #d9dde3;
 
-  background: #fff;      
+  background: #fff;
 
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
 .form-group:first-child {
   margin-top: 16px;
 }
@@ -226,13 +227,14 @@ textarea {
   font-weight: 500;
   color: #9ca3af;
 
-  background-color: #ffffff;  
+  background-color: #ffffff;
   border: 1px solid #d9dde3;
-  border-right: none;         
+  border-right: none;
 
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
+
 .select-wrapper {
   display: flex;
   width: 100%;
@@ -250,9 +252,9 @@ textarea {
   font-weight: 500;
   color: #9ca3af;
 
-  background: #ffffff;            
+  background: #ffffff;
   border: 1px solid #d9dde3;
-  border-right: none;             
+  border-right: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -265,9 +267,73 @@ textarea {
   align-items: center;
   justify-content: center;
 
-  background: #ffffff;             
-  border: 1px solid #d9dde3;       
+  background: #ffffff;
+  border: 1px solid #d9dde3;
 
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    padding-left: 40px;
+  }
+
+  .timeline-wrapper::before {
+    left: 20px;
+  }
+
+  .card-icon {
+    left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .form-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .date-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .activity-tabs {
+    overflow-x: auto;
+    gap: 25px;
+    white-space: nowrap;
+  }
+
+  .activity-tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cancel-btn,
+  .apply-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .task-form-wrapper {
+    padding: 15px;
+  }
 }

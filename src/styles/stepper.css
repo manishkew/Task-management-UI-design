@@ -3,17 +3,22 @@
   padding: 24px 32px;
   background: #FFFF;
   border-radius: 10px;
-  width: 100%
+  width: 100%;
+  flex-wrap: wrap; 
+  overflow-x: auto;
 }
 
 .ui-step {
   position: relative;
   height: 48px;
-  min-width: 295px;
+  flex: 1 1 200px;
+  min-width: 180px;
   padding: 0 46px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex: 1 1 220px;
+  min-width: 200px;
 
   font-size: 14px;
   font-weight: 500;
@@ -87,3 +92,23 @@
   font-size: 11px;
   border: none;
 }
+@media (max-width: 768px) {
+  .ui-stepper {
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: visible;
+  }
+
+  .ui-step {
+    margin-right: 0;
+    clip-path: none;       
+    border-radius: 8px;
+    min-width: 100%;
+  }
+
+  .ui-step:not(:first-child),
+  .ui-step.last {
+    clip-path: none;
+  }
+}
+

@@ -43,7 +43,7 @@
   border-bottom-right-radius: 10px;
 }
 
-/* HEADING */
+
 .tab-content h3 {
   font-size: 18px;
   font-weight: 600;
@@ -51,7 +51,6 @@
   color: #e9c66d;
 }
 
-/* PARAGRAPH */
 .tab-content p {
   font-size: 14px;
   color: #4b5563;

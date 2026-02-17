@@ -1,0 +1,273 @@
+
+.card {
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.form-left,
+.form-right {
+  flex: 1;
+}
+
+.form-group {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  height: 44px;
+  border: 1px solid #d6dbe1;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+textarea {
+  height: auto;
+  padding-top: 10px;
+}
+
+.date-row {
+  display: flex;
+  gap: 15px;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d6dbe1;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 44px;
+}
+
+.date-box input {
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+}
+
+.calendar-icon {
+  width: 45px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid #d6dbe1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F5A623' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 2v2H5a2 2 0 0 0-2 2v2h18V6a2 2 0 0 0-2-2h-2V2H9V2H7zm14 8H3v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  padding: 8px 28px;
+  border: 1px solid #d6dbe1;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.apply-btn {
+  padding: 8px 28px;
+  background: #FFF;
+  border: 1px solid #F7941D;
+  color: #F7941D;
+  border-radius: 4px;
+}
+.activity-tabs {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.activity-tabs span {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.activity-tabs .active-tab {
+   background-color: #efe1c2;
+  color: #333;
+  border-bottom: 3px solid #f97316;
+
+}
+
+
+.activity-tabs span:hover {
+  color: #000;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.fake-select {
+  height: 44px;
+  padding: 0 50px 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+  border: 1px solid #d9dde3;
+  border-radius: 6px;
+   background-color: #ffffff;
+}
+
+.select-icon-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 44px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #d9dde3;
+  background: #f4f6f9;
+
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.fake-select {
+  height: 44px;
+  padding: 0 50px 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+
+  background-color: #fff;
+  border: 1px solid #d9dde3;
+  border-radius: 6px;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 44px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #d9dde3;   
+  border-top: 1px solid #d9dde3;    
+  border-bottom: 1px solid #d9dde3;
+  border-right: 1px solid #d9dde3;
+
+  background: #fff;      
+
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.form-group:first-child {
+  margin-top: 16px;
+}
+
+.fake-select {
+  height: 44px;
+  padding: 0 50px 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+
+  background-color: #ffffff;  
+  border: 1px solid #d9dde3;
+  border-right: none;         
+
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.select-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.fake-select {
+  flex: 1;
+  height: 44px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+
+  background: #ffffff;            
+  border: 1px solid #d9dde3;
+  border-right: none;             
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.select-arrow {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;             
+  border: 1px solid #d9dde3;       
+
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

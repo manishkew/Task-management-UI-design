@@ -1,0 +1,89 @@
+.ui-stepper {
+  display: flex;
+  padding: 24px 32px;
+  background: #FFFF;
+  border-radius: 10px;
+  width: 100%
+}
+
+.ui-step {
+  position: relative;
+  height: 48px;
+  min-width: 295px;
+  padding: 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f6673;
+  background: #ebebeb;
+
+  margin-right: -24px;
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 24px) 0,
+    100% 50%,
+    calc(100% - 24px) 100%,
+    0 100%
+  );
+}
+
+.ui-step:not(:first-child) {
+  clip-path: polygon(
+    24px 0,
+    calc(100% - 24px) 0,
+    100% 50%,
+    calc(100% - 24px) 100%,
+    24px 100%,
+    38px 50%
+  );
+}
+
+
+.ui-step:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.ui-step.last {
+    clip-path: polygon(
+    24px 0,                 
+    100% 0,                 
+    100% 100%,             
+    24px 100%,             
+    38px 50%           
+  );
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ui-step.completed {
+  background: #36a865;
+  color: #fff;
+}
+
+.ui-step.active {
+  background:  #efe1c2;
+  color: #333;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #aab2bd;
+}
+
+.circle.done {
+  background: #fff;
+  color: #36a865;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  border: none;
+}

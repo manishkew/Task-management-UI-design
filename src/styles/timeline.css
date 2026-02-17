@@ -1,0 +1,210 @@
+
+.timeline-section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1200px;   
+  width: 105%;
+ 
+}
+
+.timeline-filter {
+  margin-bottom: 18px;
+}
+
+
+.filter-box-static {
+  height: 44px;
+  border: 1px solid #d6dbe1;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #5f6b7a;
+  background: #ffffff;
+}
+
+
+.timeline-list {
+  padding-left: 0;  
+  margin-top: 2px; 
+  border-bottom: 1px solid #e3e8ee; 
+}
+
+
+
+.timeline-row {
+   position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-card {
+  width: 100%;                   
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  border-radius: 8px;
+  padding: 16px 18px;            
+  min-height: auto;   
+            
+}
+
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+
+.card-icon {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.card-icon.blue {
+  border-color: #2f80ed;
+  color: #2f80ed;
+}
+
+.card-icon.green {
+  border-color: #27ae60;
+  color: #27ae60;
+}
+
+.card-icon.red {
+  border-color: #eb5757;
+  color: #eb5757;
+}
+
+
+.card-content h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2f3a45;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #5f6b7a;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.card-content span {
+  color: #f7941d;
+  font-weight: 500;
+}
+
+.card-content small {
+  font-size: 12px;
+  color: #8c97a8;
+}
+.card-expand {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #8c97a8;
+}
+
+
+.timeline-section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 39px;
+
+  width: 2px;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    #9ca3af 0px,     
+    #9ca3af 6px,      
+    transparent 6px,
+    transparent 12px 
+  );
+}
+
+
+.timeline-row:last-child::after {
+  display: none;
+}
+
+.filter-wrapper {
+  display: flex;
+  width: 415px; 
+}
+
+.filter-text {
+  flex: 1;
+  height: 44px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-right: none;
+
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.timeline-wrapper {
+  position: relative;
+ 
+}
+.filter-icon-box {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.timeline-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 16px 0;      
+}
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.card-icon.red {
+  border: 2px solid #ef4444;
+  color: #ef4444;
+}

@@ -101,7 +101,7 @@ function TaskForm() {
 
             <div className="form-group">
               <label>Details</label>
-              <textarea rows="10" />
+              <textarea rows="8" />
             </div>
 
           </div>
